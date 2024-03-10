@@ -1,0 +1,13 @@
+J:\01 Work\01-Development\AUB\AUBassignment\DataAccess\bin\Debug\netcoreapp3.0\DataAccess.deps.json
+J:\01 Work\01-Development\AUB\AUBassignment\DataAccess\bin\Debug\netcoreapp3.0\DataAccess.runtimeconfig.json
+J:\01 Work\01-Development\AUB\AUBassignment\DataAccess\bin\Debug\netcoreapp3.0\DataAccess.runtimeconfig.dev.json
+J:\01 Work\01-Development\AUB\AUBassignment\DataAccess\bin\Debug\netcoreapp3.0\DataAccess.dll
+J:\01 Work\01-Development\AUB\AUBassignment\DataAccess\bin\Debug\netcoreapp3.0\DataAccess.pdb
+J:\01 Work\01-Development\AUB\AUBassignment\DataAccess\bin\Debug\netcoreapp3.0\DataModels.dll
+J:\01 Work\01-Development\AUB\AUBassignment\DataAccess\bin\Debug\netcoreapp3.0\DataModels.pdb
+J:\01 Work\01-Development\AUB\AUBassignment\DataAccess\obj\Debug\netcoreapp3.0\DataAccess.csprojAssemblyReference.cache
+J:\01 Work\01-Development\AUB\AUBassignment\DataAccess\obj\Debug\netcoreapp3.0\DataAccess.AssemblyInfoInputs.cache
+J:\01 Work\01-Development\AUB\AUBassignment\DataAccess\obj\Debug\netcoreapp3.0\DataAccess.AssemblyInfo.cs
+J:\01 Work\01-Development\AUB\AUBassignment\DataAccess\obj\Debug\netcoreapp3.0\DataAccess.csproj.CopyComplete
+J:\01 Work\01-Development\AUB\AUBassignment\DataAccess\obj\Debug\netcoreapp3.0\DataAccess.dll
+J:\01 Work\01-Development\AUB\AUBassignment\DataAccess\obj\Debug\netcoreapp3.0\DataAccess.pdb

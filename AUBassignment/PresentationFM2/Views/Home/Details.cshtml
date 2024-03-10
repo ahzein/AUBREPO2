@@ -1,0 +1,93 @@
+﻿@model DataModels.Movie
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<h1>@Model.title</h1>*@
+
+<table>
+    <tr>
+        <td>
+            <img src="https://image.tmdb.org/t/p/original/@Model.poster_path" style="width: 400px;margin: 0px;" />
+        </td>
+        <td>
+            <h1 style="margin-left:20px">@Model.title</h1>
+            <div class="container">
+
+                <div class="movie-info">
+
+                    <p style="font-weight: bold;">Release Date:</p> @Model.release_date
+                    <p style="font-weight: bold;">Popularity:</p> @Model.popularity
+                    <p style="font-weight: bold;">Overview:</p> @Model.overview
+                    <p style="font-weight: bold;">Genres:</p>@(Model.genres == null ? "" : string.Join(", ", Model.genres.Select(c => c.name)))
+                    <p style="font-weight: bold;">Spoken Languages:</p>@(Model.spoken_languages == null ? "" : string.Join(", ", Model.spoken_languages.Select(c => c.name)))
+                    <p style="font-weight: bold;">adult:</p> @Model.adult
+
+                    <p style="font-weight: bold;">DataSource:</p>@(Model.genres == null ? "Local SQL Database" : "Cloud API")
+
+                </div>
+                @if (Model.genres != null)
+                {
+                    <div><p><a href="/home/SaveMovieDetails?MovieID=@Model.id.ToString()" class="btn btn-primary btn-lg">Save to Local Database</a></p></div>
+                }
+                else
+                {
+                    <div><p><a href="/home/DeleteMovieDetails?MovieID=@Model.id.ToString()" class="btn btn-primary btn-lg" style="background: #ba1616;    border-color: #ba1616;">Delete from Local Database</a></p></div>
+
+                }
+
+            </div>
+
+
+        </td>
+    </tr>
+
+</table>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .movie-poster {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .movie-info {
+            margin-bottom: 20px;
+        }
+
+            .movie-info h1 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            .movie-info p {
+                font-size: 16px;
+                margin: 5px 0;
+            }
+    </style>
+</head>
+<body>
+
+   
+
+</body>
+</html>
+

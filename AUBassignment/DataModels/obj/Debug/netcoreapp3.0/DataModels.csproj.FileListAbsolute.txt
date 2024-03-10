@@ -1,0 +1,7 @@
+J:\01 Work\01-Development\AUB\AUBassignment\DataModels\bin\Debug\netcoreapp3.0\DataModels.deps.json
+J:\01 Work\01-Development\AUB\AUBassignment\DataModels\bin\Debug\netcoreapp3.0\DataModels.dll
+J:\01 Work\01-Development\AUB\AUBassignment\DataModels\bin\Debug\netcoreapp3.0\DataModels.pdb
+J:\01 Work\01-Development\AUB\AUBassignment\DataModels\obj\Debug\netcoreapp3.0\DataModels.AssemblyInfoInputs.cache
+J:\01 Work\01-Development\AUB\AUBassignment\DataModels\obj\Debug\netcoreapp3.0\DataModels.AssemblyInfo.cs
+J:\01 Work\01-Development\AUB\AUBassignment\DataModels\obj\Debug\netcoreapp3.0\DataModels.dll
+J:\01 Work\01-Development\AUB\AUBassignment\DataModels\obj\Debug\netcoreapp3.0\DataModels.pdb

@@ -1,0 +1,115 @@
+﻿
+@model List<DataModels.Movie>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>This project retreives a list of popular movies from a cloud API.</p>
+</div>
+
+<div class="table-responsive">
+
+
+
+    <table id="ItemsTable" class="table table-sm table-hover table-striped o_list_table_ungrouped MyTableStyle dataTable display" style="width:100%;">
+        <thead>
+            <tr>
+
+                <th style="width: 10px !important;text-align: center;" />
+                <th style="width:0px;text-align: center;"> ID</th>
+
+
+
+                <th style="text-align: center;">
+                    Picture<span class="o_resize" />
+                </th>
+                <th style="text-align: center;">
+                    Movie Title/Overview<span class="o_resize" />
+                </th>
+               
+
+                <th style="text-align: center;width: 10%;">
+                    Release Date<span class="o_resize" />
+                </th>
+
+                
+
+                <th style="text-align: center;">
+                    Details<span class="o_resize" />
+                </th>
+
+                <th>
+
+                </th>
+
+
+            </tr>
+        </thead>
+        <tbody class="ui-sortable">
+
+
+            @foreach (DataModels.Movie MovieItem in Model)
+            {
+
+
+
+            <tr>
+
+                <td style="text-align: center;">
+                    <span class="fa fa-circle" name="sequence" />
+                </td>
+                <td style="font-weight:bold;vertical-align: middle;"><div style="vertical-align: middle;"> @MovieItem.id</div></td>
+
+                <td style="vertical-align: middle;"> <img src="https://image.tmdb.org/t/p/w500/@MovieItem.poster_path" style="width: 200px;margin: 30px;" /></td>
+               
+                <td style="vertical-align: middle;    padding-right: 110px;">
+                  
+
+                    <p style="font-weight: bold;font-size: larger;">@MovieItem.title</p> @MovieItem.overview
+
+
+
+                </td>
+
+
+
+
+               
+                <td style="vertical-align: middle;"><div> @MovieItem.release_date</div></td>
+               
+                
+                
+                <td style="vertical-align: middle;padding-right: 27px;"> <div><p><a href="/home/MovieDetails?MovieID=@MovieItem.id.ToString()" class="btn btn-primary btn-lg">Details</a></p></div></td>
+
+
+            </tr>
+
+
+
+            }
+
+
+        </tbody>
+        <tfoot>
+            <tr>
+
+                <td />
+                <td />
+                <td />
+               
+                <td />
+                <td />
+            
+          
+                <td />
+
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+</div>

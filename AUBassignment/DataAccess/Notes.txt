@@ -1,0 +1,12 @@
+﻿code first notes:
+--------------------------
+-the connection string is in the MainBackentAPI project appsettings.json
+-check the service config in under //configure data Access
+-in nuget manager console to create the migration folder type:
+	Add-Migration Initial -Project DataAccess -o DataAccessClasses/migrations    
+-in nuget manager console to apply the migration to the database:
+	update-database
+	
+-if some updates occured in the data entities classes(column name fo ex)
+   Add-Migration secondMigration -Project DataAccess -o DataAccessClasses/migrations
+   update-database
